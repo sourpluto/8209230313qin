@@ -2,14 +2,14 @@
 #include <cmath>
 using namespace std;
 int g(int a, int b) {
-    while(b != 0) {
+    while (b != 0) {
         int t = a;
         a = b;
         b = t % b;
     }
     return a;
-   //
-    }
+    //
+}
 
 int s(int a, int b) {
     return a * b / g(a, b);
